@@ -1,0 +1,81 @@
+.contact-me{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background-color: #2a2c2d;
+       height: 50vh;
+       width: 100vw;
+       flex-direction: column;
+} 
+.contact-me .contact-title{
+       color: skyblue;
+       display: flex;
+       height: 100%;
+       width: 100%;
+       font-weight:bolder;
+       justify-content: center;
+       align-items: center;
+      
+       padding: 25px;
+       
+}
+.contact-container{
+      
+       display: flex;
+       height: 100%;
+       width: 100%;
+       align-items: center;
+      justify-content: center;
+       flex-direction: column;
+       
+      
+}
+
+.contact-header{
+      
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       height: auto;
+      flex-direction: column;
+       width: 100%;
+       color: white;
+       
+       
+}
+
+.home-icons {
+       display: flex;
+       gap: 1rem;
+       color: default;
+       justify-content: center;
+       align-items: center;
+       text-decoration: none;
+       
+      
+}
+
+footer, footer >  p{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: row;
+       color: gray;
+       font-size: 10px;
+       padding: 10px;
+}
+
+@media screen and (max-width: 786px) {
+       .contact-me{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+       }
+       .home-icons{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+       }
+}
