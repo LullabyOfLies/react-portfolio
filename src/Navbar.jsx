@@ -24,7 +24,7 @@ const Navbar = () => {
         </a>
       </h1>
       {/* 5. Lastly, the div below with the className of `nav-menu` will check if (?) the button is `clicked`, if it is the `show-menu` CSS will trigger along with the `nav-menu` CSS, else (:) the `donotshow-menu` CSS will trigger along with the `nav-menu` , REFER TO THE Navbar.css for the styling triggers.*/}
-      <div className={`nav-menu ${clicked ? 'show-menu' : 'donotshow-menu'}`}>
+      <div className={`nav-menu ${clicked ? 'show-menu': 'donotshow-menu'}`}>
         <ul>
           <li className="active">
             <a href="#home-container">Home</a>

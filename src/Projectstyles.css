@@ -118,7 +118,9 @@
        margin: auto;
        justify-content: center;
        border-radius: 10%;
+      
 }
+
 
 .imageholder > img{
        border: inherit;
@@ -126,8 +128,27 @@
        max-height: 100%;
        object-fit: fill;
        border-radius: 10%;
+       box-shadow: 2px 2px 3px gray;
+      
+       
 }
 
+/* .imageholder > img:hover{
+       animation: zoom 1s ease-in forwards;
+}
+
+
+@keyframes zoom {
+       0%{
+              opacity: 0;
+              transform: translateX(-100px);
+       }
+      
+       100%{
+              opacity: 1;
+              transform: translateX(0px);
+       }
+} */
 @media screen and (max-width: 786px){
        .project-container {
               display: flex;
@@ -170,6 +191,8 @@
        .imageholder{
               height: 150px;
               width: 250px;
+              position: relative;
+              z-index: 1;
        }
 
        .imageholder > img{
@@ -178,6 +201,8 @@
               max-height: 100%;
               object-fit: fill;
               border-radius: 10%;
+              position: relative;
+              z-index: 1;
        }
 
        
