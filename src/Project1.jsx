@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import './Projectstyles.css'
 import Project2 from './assets/images/sample2.jpg'
 import {FaReact} from "react-icons/fa"
@@ -6,6 +6,9 @@ import {FaCss3Alt} from "react-icons/fa"
 import {AiFillGithub} from "react-icons/ai"
 import {MdOpenInNew} from "react-icons/md"
 import { Tilt } from 'react-tilt'
+import 'animate.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 const Projects1 = () => {
 
   const defaultOptions = {
@@ -19,13 +22,18 @@ const Projects1 = () => {
     reset:          true,    // If the tilt effect has to be reset on exit.
     easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
   }
+
+  useEffect(()=>{
+    Aos.init({duration: 700})
+  },[])
+
   return (
     <section className="project-container">
       <div className="wrapper">
 
-        <div className="project-desc">
-          <h4 className="project-title">Project 2</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor aliquid aperiam at fuga rem. Fuga iste impedit quae hic est ipsa a, voluptatibus voluptate nisi porro ratione laboriosam quam.</p>
+        <div className="project-desc" data-aos="fade-up-right">
+          <h3 className="project-title font-link-montserrat" >Project 2</h3>
+          <p className='font-link-lato'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor aliquid aperiam at fuga rem. Fuga iste impedit quae hic est ipsa a, voluptatibus voluptate nisi porro ratione laboriosam quam.</p>
 
           <div className="tech-used">
             <div className="project-tech">
@@ -51,7 +59,7 @@ const Projects1 = () => {
           </div>
         </div>
 
-        <div className="project-header">
+        <div className="project-header" data-aos="fade-down-left">
         <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}><div className="imageholder">
             <img src={Project2} alt="Project2" />
         </div>

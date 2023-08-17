@@ -10,11 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-shuffle-text": "^1.0.6",
     "react-tilt": "^1.0.2",
+    "typewriter-effect": "^2.20.1",
     "windups": "^1.2.1"
   },
   "devDependencies": {

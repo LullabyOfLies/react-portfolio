@@ -111,10 +111,13 @@ body{
 }
 .nav li:hover{
        transform: translateY(10%);
-      
-       
 }
 .nav li:hover:after{
+       transform: scaleX(1);
+       transform-origin: bottom left;
+}
+
+.nav li:active{
        transform: scaleX(1);
        transform-origin: bottom left;
 }

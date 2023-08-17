@@ -8,7 +8,6 @@ import {FaReact} from "react-icons/fa"
 const Contact = () => {
   return (
     <section id="contact-me" className="contact-me">
-     <hr />
       <div className="contact-header">
       <h4 className="contact-title">CONTACT</h4>
           <h4>Reach out 🤝 to me on: </h4>

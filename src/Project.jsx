@@ -1,5 +1,4 @@
-import React from 'react'
-import { useState } from 'react'
+import React, {useEffect} from 'react'
 import './Projectstyles.css'
 import Nassi from './assets/images/Nassi.png'
 import {AiFillHtml5} from 'react-icons/ai'
@@ -8,9 +7,13 @@ import {DiJavascript} from "react-icons/di"
 import {AiFillGithub} from "react-icons/ai"
 import {MdOpenInNew} from "react-icons/md"
 import { Tilt } from 'react-tilt'
+import 'animate.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+
 
 const Projects = () => {
-
+  
   const defaultOptions = {
     reverse:        false,  // reverse the tilt direction
     max:            35,     // max tilt rotation (degrees)
@@ -24,39 +27,42 @@ const Projects = () => {
   }
   
 
+  useEffect(()=>{
+    Aos.init({duration: 1000})
+  },[])
 
   return (
     <section id="project-container" className="project-container">
       <div className="wrapper">
-        <div className="project-header">
+        <div className="project-header" data-aos="fade-up" >
           <h4 className="header-portfolio">PORTFOLIO</h4>
           <h3>A compilation of projects I've developed</h3>
-          <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}><div className="imageholder">
+          <Tilt options={defaultOptions} style={{ height: 150, width: 250 }}><div className="imageholder">
             <img src={Nassi} alt="Project1" />
           </div>
           </Tilt>
         </div>
         
         
-        <div className="project-desc">
-          <h4 className="project-title">NassiPy</h4>
-          <p>Developed a Web application that helps newbies that wants to learn programing by introducing them to Python (one of the most basic programming language) and Nassi-Shneiderman Diagram for simple and top to down approach. With compact tutorials about indentations, syntax, and flow controls.</p>
+        <div className="project-desc" data-aos="fade-down">
+          <h3 className="project-title font-link-montserrat">NassiPy</h3>
+          <p className='font-link-lato'>Developed a Web application that helps newbies that wants to learn programing by introducing them to Python (one of the most basic programming language) and Nassi-Shneiderman Diagram for simple and top to down approach. With compact tutorials about indentations, syntax, and flow controls.</p>
 
           <ul className="tech-used">
             <li className="project-tech">
-              <p>
+              <p className='font-link-lato'>
               HTML <AiFillHtml5 />
               </p>
             </li>
 
             <li className="project-tech">
-              <p> 
+              <p className='font-link-lato'> 
               CSS <FaCss3Alt />
               </p>
             </li>
 
             <li className="project-tech">
-              <p>
+              <p className='font-link-lato'>
               Javascript <DiJavascript />
               </p>
             </li>
@@ -76,10 +82,7 @@ const Projects = () => {
           </div>
         </div>
        
-      </div>
-
-      
-      
+      </div> 
     </section>
   )
 }
