@@ -5,7 +5,7 @@ import {FaReact} from "react-icons/fa"
 import {AiFillHtml5} from "react-icons/ai"
 import {FaCss3Alt} from "react-icons/fa"
 import {FaJs} from "react-icons/fa"
-import {SiTailwindcss} from "react-icons/si"
+import {RiBootstrapFill} from "react-icons/ri"
 import ShuffleText from 'react-shuffle-text';
 import Typewriter from 'typewriter-effect';
 
@@ -33,11 +33,11 @@ const Home = () => {
         
         <div className="techStack animate__animated animate__slideInRight animate_delay">
           <p> Tech stack |</p>
-          <a href="#" target="_blank" rel="noreferrer"><FaReact /></a>
-          <a href="#" target="_blank" rel="noreferrer"><AiFillHtml5 /></a>
-          <a href="#" target="_blank" rel="noreferrer"><FaCss3Alt /></a>
-          <a href="#" target="_blank" rel="noreferrer"><FaJs /></a>
-          <a href="#" target="_blank" rel="noreferrer"><SiTailwindcss /></a>
+          <a href="https://react.dev" target="_blank" rel="noreferrer"><FaReact /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><AiFillHtml5 /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noreferrer"><FaCss3Alt /></a>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><FaJs /></a>
+          <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><RiBootstrapFill /></a>
         </div>
        </div>
     

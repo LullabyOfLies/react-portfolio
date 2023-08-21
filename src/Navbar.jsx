@@ -40,10 +40,7 @@ const Navbar = () => {
           <li className={activeItem === 0 ? 'active' : ''} onClick={() => handleItemClick(0)}>
             <a href="#contact-me">Contact</a>
           </li>
-          <li>
-            {/*Button*/}
-            
-          </li>
+
         </ul>
       </div>
       {/* 1. The div with className of `nav-icon when clicked will trigger the handleClick Function */}

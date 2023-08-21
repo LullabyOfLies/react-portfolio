@@ -57,7 +57,7 @@
 
 .home-icons > a:hover {
     
-       cursor: default;
+      
        background-color: inherit;
        color: white;
        transform: translateY(20%);

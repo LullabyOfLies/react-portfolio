@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import './Projectstyles.css'
-import Project2 from './assets/images/sample2.jpg'
+import Project2 from './assets/images/pomodoro-app.png'
 import {FaReact} from "react-icons/fa"
 import {FaCss3Alt} from "react-icons/fa"
 import {AiFillGithub} from "react-icons/ai"
@@ -32,8 +32,8 @@ const Projects1 = () => {
       <div className="wrapper">
 
         <div className="project-desc" data-aos="fade-up-right">
-          <h3 className="project-title font-link-montserrat" >Project 2</h3>
-          <p className='font-link-lato'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor aliquid aperiam at fuga rem. Fuga iste impedit quae hic est ipsa a, voluptatibus voluptate nisi porro ratione laboriosam quam.</p>
+          <h3 className="project-title font-link-montserrat" >Pomodoro App</h3>
+          <p className='font-link-lato'>ReactJS and Vanilla CSS were used to create a Pomodoro Timer web application that allows users to efficiently arrange chores using the Pomodoro technique. The app provides a straightforward user interface made with Vanilla CSS for a quick and easy experience.</p>
 
           <div className="tech-used">
             <div className="project-tech">
@@ -47,12 +47,12 @@ const Projects1 = () => {
 
           <div className="checkIt">
             <div className="check">
-            <a href="#" rel="noreferrer">
+            <a href="https://github.com/LullabyOfLies/Pomodoro-App" target='_blank' rel="noreferrer">
               <h4>Check Code <AiFillGithub /></h4>
               </a>
             </div>
             <div className="check">
-              <a href="#" rel="noreferrer">
+              <a href="https://beta-pomodoro-app.netlify.app" target='_blank' rel="noreferrer">
               <h4>Live Demo <MdOpenInNew /></h4>
               </a>
             </div>
