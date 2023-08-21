@@ -10,8 +10,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #161616;
+  background: #0f1116;
   overflow-x: hidden;
+  justify-content: center;
+  place-items: center;
+
 }
 
 code {
@@ -40,5 +43,5 @@ code {
 .font-link-bebas{
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.2em;
-  color: whitesmoke;
+  
 }

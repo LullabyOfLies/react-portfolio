@@ -7,6 +7,7 @@
 body{
        position: relative;
        margin: 0;
+       overflow-x: hidden;
 }
 /* The default navbar styling will start here */
 .nav{ 
@@ -18,12 +19,13 @@ body{
        position: fixed;
        width: 100vw;
        align-items: stretch;
-       background: #161616;
+       background: #0f1116;
        color: white;
        font-family: 'Noto Sans'. sans-serif;
        gap: 2rem;
        z-index: 5;
        /* padding: 0 1rem;  */
+       overflow-x: hidden;
       
 }
 .nav-menu{
@@ -34,12 +36,12 @@ body{
        flex-direction: row;
        justify-content: space-between;
        align-items: stretch;
-       background: #161616;
+       background: #0f1116;
        color: white;
        font-family: 'Noto Sans'. sans-serif;
        gap: 2rem;
        padding: 0 1rem;
-       
+       overflow-x: hidden;
       
 }
 
@@ -51,15 +53,20 @@ body{
        list-style: none;
        display: flex;
        gap: 1rem;
+       overflow-x: hidden;
 }
 
 .site-title{
        /* 4. This is the `JL.Dev` text in the upper left corner of the screen that's wrapped in an anchor tag by which is also HOME */
        display: inline-block;
        position: relative;
-       color: #0087ca;
        font-size: 1.5rem;
        
+}
+
+.lato-color{
+       color: #08bef2;
+       font-size: 30px;
 }
 
 .site-title:after{
@@ -70,9 +77,10 @@ body{
        height: 2px;
        bottom: 0;
        left: 0;
-       background-color: gray;
+       background-color: white;
        transform-origin: bottom right;
        transition: transform 0.25s ease-out;
+       overflow-x: hidden;
 }
 
 .site-title:hover:after{
@@ -92,9 +100,12 @@ body{
 
        /*6. On hover on the list items , it will show the following styles*/
 .nav li{
+       border: none;
        display: inline-block;
        position: relative;
-      
+       cursor: pointer;
+       padding: 10px 16px;
+       color: gray;
 }
 
 .nav li:after{
@@ -105,22 +116,19 @@ body{
        height: 2px;
        bottom: 0;
        left: 0;
-       background-color: gray;
+       background-color: white;
        transform-origin: bottom left;
        transition: transform 0.25s ease-out;
 }
 .nav li:hover{
        transform: translateY(10%);
+       color: white;
 }
 .nav li:hover:after{
        transform: scaleX(1);
        transform-origin: bottom left;
 }
 
-.nav li:active{
-       transform: scaleX(1);
-       transform-origin: bottom left;
-}
 
 .nav-icon{
        display: none;
@@ -141,6 +149,7 @@ body{
        font-family: 'Noto Sans'. sans-serif;
        gap: 2rem;
        padding: 0 1rem;
+       overflow-x: hidden;
      
 }
      
@@ -160,7 +169,7 @@ body{
               border: none;
               padding: 0 20px;
               z-index: 200;
-              
+              overflow-x: hidden;
              
              
 }
@@ -172,7 +181,7 @@ body{
        height: 100vh;
        width: auto;
        background-color: inherit;
-      
+       overflow-x: hidden;
 }
 
 @keyframes slide-in {
@@ -186,11 +195,12 @@ body{
 
 .nav a {
        padding-top: 10px;
+       overflow-x: hidden;
 }
 
 /* Sa may Navbar.js */
 .show-menu {
-       display: fixed;
+       display: block;
        top: 0;
        left: 0;
        background-color: inherit;
@@ -199,6 +209,7 @@ body{
        /* transition: transform 0.3s ease-in; */
        color: white;
        flex-direction: column;
+        overflow-x: hidden;
       
        
        }

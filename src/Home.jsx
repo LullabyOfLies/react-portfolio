@@ -16,17 +16,20 @@ const Home = () => {
         <div className="home-container2">
           <img src={logo}  alt="formalpic"/>
         </div>
-        
-        <h1 className="font-link-bebas animate__animated animate__slideInLeft"><ShuffleText content = "Jean Lorenz R. Recato"/></h1>
-        <p className="font-link-oswald">Hi! I'm Jean and I'm a
-          <Typewriter
-            options={{
-              autoStart: true,
-              loop: true,
-              delay: 50,
-              strings: ["Front-End Developer", "Software Engineer", "UI/UX Designer"]
-            }}
-          /></p>
+        <h4 className="font-link-oswald">Hi! I am </h4>
+        <h1 className="font-link-bebas text-colored-white animate__animated animate__slideInLeft"><ShuffleText content = "Jean Lorenz R. Recato"/></h1>
+        <h3 className="font-link-oswald"> 
+          <span className='typewriter-fx'> 
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                delay: 50,
+                strings: [">Front-End Developer", ">Software Engineer", ">UI/UX Designer"],
+              }}
+            />
+          </span>     
+          </h3>
         
         <div className="techStack animate__animated animate__slideInRight animate_delay">
           <p> Tech stack |</p>
