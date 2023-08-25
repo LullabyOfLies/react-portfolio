@@ -28,7 +28,7 @@ const Home = () => {
           <img src={logo}  alt="formalpic"/>
         </div>
         <h4 className="font-link-oswald">Hi! I am </h4>
-        <h1 className="font-link-bebas text-colored-white animate__animated animate__slideInLeft"><ShuffleText content = "Jean Lorenz R. Recato"/></h1>
+        <h2 className="font-link-bebas text-colored-white animate__animated animate__slideInLeft"><ShuffleText content = "Jean Lorenz R. Recato"/></h2>
         <h3 className="font-link-oswald"> 
           <span className='typewriter-fx'> 
             <Typewriter
