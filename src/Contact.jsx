@@ -10,8 +10,8 @@ const Contact = () => {
     <section id="contact-me" className="contact-me">
       <div className="contact-header">
       <h4 className="contact-title">CONTACT</h4>
-          <h4>Reach out 🤝 to me on: </h4>
-        </div>
+          <h4 className="contact-title-desc">Reach out 🤝 to me on: </h4>
+      </div>
       <div className="contact-container">
         <div className="home-icons">
          <a href="https://github.com/LullabyOfLies" target="_blank" rel="noreferrer" className="icon-link">

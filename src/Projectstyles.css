@@ -11,14 +11,16 @@
        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
        background: inherit;
        text-align: center;
+       overflow: hidden;
 }
 .wrapper{
        display: grid;
-       gap: 1rem;
+       /* gap: 1rem; */
        grid-template-columns: repeat(2, 1fr);
        grid-template-columns: repeat(minmax(200px, 1fr));
        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
        margin: 0 25px;
+       
 }
 
 .project-header{
@@ -29,6 +31,7 @@
        margin: auto;
        padding: 25px;
        gap: 1rem;
+       
 }
 .project-header > .header-portfolio{
        color: skyblue;
@@ -47,7 +50,8 @@
        width: 350px;
        gap: 1rem;
        text-align: center;
-     
+       overflow: hidden;
+       padding-top: 100px;
 }
 
 .project-desc > h4, p{
@@ -111,7 +115,7 @@
        transition: ease-out;
 }
 .imageholder{
-     
+       
        display: flex;
        height: 300px;
        width: 350px;
@@ -133,22 +137,7 @@
        
 }
 
-/* .imageholder > img:hover{
-       animation: zoom 1s ease-in forwards;
-}
 
-
-@keyframes zoom {
-       0%{
-              opacity: 0;
-              transform: translateX(-100px);
-       }
-      
-       100%{
-              opacity: 1;
-              transform: translateX(0px);
-       }
-} */
 @media screen and (max-width: 786px){
        .project-container {
               display: flex;
@@ -169,7 +158,10 @@
               align-items: center;
               flex-direction: column;
               gap: 0.5rem;
-              overflow-x: none;
+              border: 1px solid grey;
+              border-radius: 20px;
+       
+              
               /* padding: auto; */
        }
 
@@ -233,6 +225,135 @@
        }
        
        .project-title{
+              color: white;
+       }
+       
+       .tech-used{
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              flex-direction: row;
+              gap: 1rem;
+              height: 20px;
+              overflow-x: none;
+       }
+       .project-tech{
+              color:white;
+              text-decoration: none;
+              height: 20px;
+              overflow-x: none;
+       }
+
+       
+       .checkIt{
+              display: flex;
+              align-items: center;
+              justify-content: space-evenly;
+              flex-direction: row;
+              gap: 1rem;
+       }
+       .check > a{
+              color:white;
+              text-decoration: none;
+              margin: auto;
+       }
+       
+       .check:hover h4{
+              background-color: inherit;
+              color: gray;
+              transform: translateY(20%);
+              transition: ease-out;
+       }
+}
+
+@media screen and (max-width: 600px){
+       .project-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              gap: 0.25rem;
+              width: 100vw;
+              height: 100%;
+              /* margin: 25px; */
+              padding: 50px;
+              overflow-x: hidden;
+            
+             
+       }
+       .wrapper{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              /* gap: 0.25rem; */
+               overflow-x: hidden;
+              /* padding: auto; */
+       }
+
+       .project-header{
+              display: flex;
+              height: 100%;
+              width: 300px;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
+              gap: 0.5rem;
+              margin: 0;
+              padding: 0;
+       }
+
+       .header-portfolio{
+              padding-top: 25px;
+       }
+
+       .imageholder{
+              height: 150px;
+              width: 250px;
+              position: relative;
+              z-index: 1;
+              overflow-x: none;
+       }
+
+       .imageholder > img{
+              
+              max-width: 100%;
+              max-height: 100%;
+              object-fit: fill;
+              border-radius: 10%;
+              position: relative;
+              z-index: 1;
+              overflow-x: hidden;
+       }
+
+       
+       .project-desc{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: 100%;
+              width: 100%;
+              padding: 25px;
+              /* gap: 1rem; */
+              text-align: center;
+              /* margin: 25px; */
+              overflow: hidden;
+              font-size: 10px;
+             
+       }
+       
+       .project-desc >  p{
+              
+              line-height: 20px;
+              text-align: justify;
+              text-justify: inter-word;
+              height: 100%;
+              overflow: hidden;
+       }
+       
+       .project-title{
+              padding: 0;
               color: white;
        }
        

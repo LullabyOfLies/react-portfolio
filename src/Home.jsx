@@ -1,4 +1,4 @@
-import React from 'react'
+import {React, useEffect} from 'react'
 import './Homestyle.css'
 import logo from './assets/images/newprofpic1.jpg'
 import {FaReact} from "react-icons/fa"
@@ -8,12 +8,23 @@ import {FaJs} from "react-icons/fa"
 import {RiBootstrapFill} from "react-icons/ri"
 import ShuffleText from 'react-shuffle-text';
 import Typewriter from 'typewriter-effect';
+import CV from './CV/CV.pdf'
+import 'animate.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Home = () => {
+
+  useEffect(()=>{
+    Aos.init({duration: 800})
+  },[])
+  const onDownload = () => console.log('Download')
+
+ 
   return (
     <section id="home-container" className="home-container" >
       <div className="home-container1">
-        <div className="home-container2">
+        <div className="home-container2" data-aos="fade-in">
           <img src={logo}  alt="formalpic"/>
         </div>
         <h4 className="font-link-oswald">Hi! I am </h4>
@@ -39,9 +50,12 @@ const Home = () => {
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"><FaJs /></a>
           <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"><RiBootstrapFill /></a>
         </div>
+       <a className="cv-link" href={CV} download="Resume.pdf">
+        <button className="cv-download">Download CV</button>
+       </a>
        </div>
-    
-  
+      
+              
 
     </section>
   
