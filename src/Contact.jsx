@@ -15,19 +15,20 @@ const Contact = () => {
       <div className="contact-container">
         <div className="home-icons">
          <a href="https://github.com/LullabyOfLies" target="_blank" rel="noreferrer" className="icon-link">
-            <AiFillGithub /> github.com/LullabyOfLies
+            <button className="github-btn">Github <AiFillGithub /></button>
+            
           </a>
 
           <a href="https://www.linkedin.com/in/jean-lorenz-recato-31a6b6249/" target="_blank" rel="noreferrer" className="icon-link">
-            <AiFillLinkedin /> in/Jean.Lorenz.Recato
+            <button>LinkedIn <AiFillLinkedin /></button>
           </a>
 
           <a href="https://www.facebook.com/DjinnLorenz/" target="_blank" rel="noreferrer" className="icon-link">
-            <FaFacebookF /> fb.me/DjinnLorenz
+          <button> Facebook <FaFacebookF /> </button>
           </a>
 
           <a href="mailto:jeanrecato25@gmail.com" target="_blank" rel="noopener noreferrer" className="icon-link">
-          <SiGmail /> jeanrecato25@gmail.com
+          <button> Gmail <SiGmail /></button>
           </a>
 
         </div>

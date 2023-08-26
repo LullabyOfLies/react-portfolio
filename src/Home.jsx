@@ -27,7 +27,7 @@ const Home = () => {
         <div className="home-container2" data-aos="fade-in">
           <img src={logo}  alt="formalpic"/>
         </div>
-        <h4 className="font-link-oswald">Hi! I am </h4>
+        <h4 className="font-link-oswald iam">Hi! I am </h4>
         <h2 className="font-link-bebas text-colored-white animate__animated animate__slideInLeft"><ShuffleText content = "Jean Lorenz R. Recato"/></h2>
         <h3 className="font-link-oswald"> 
           <span className='typewriter-fx'> 

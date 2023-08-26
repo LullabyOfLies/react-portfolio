@@ -10,13 +10,14 @@
        width: 100%;
        overflow-x: hidden;
        /* padding: 0px; */
+
 }
 
 .home-container1{
        display: flex;
        flex-direction: column;
        height: auto;
-       gap: 1rem;
+       gap: 1.5rem;
        justify-content: center;
        align-items: center;
        margin: 0 20px;
@@ -24,8 +25,11 @@
        width: 100vw;
        overflow-x: hidden;
        padding: 20px;
-}
 
+}
+.iam{
+       font-size: 20px;
+}
 .typewriter-fx{
        color: #0ab4f1;
 }
@@ -50,7 +54,7 @@
        height: 200px;
        width: 200px;
        margin: auto;
-       /* border: 1px solid red; */
+    
 }
 
 .home-container2 > img  {
@@ -234,13 +238,14 @@ button{
               width: 100%;
               overflow-x: hidden;
               padding: 20px;
+            
        }
 
        .home-container1{
               display: flex;
               flex-direction: column;
               height: auto;
-              gap: 1.5rem;
+              gap: 0.5rem;
               justify-content: center;
               align-items: center;
               margin: 0 20px;
@@ -259,8 +264,8 @@ button{
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 200px;
-              height: 200px;
+              width: 150px;
+              height: 150px;
               overflow-x: hidden;
        }
        .techStack{

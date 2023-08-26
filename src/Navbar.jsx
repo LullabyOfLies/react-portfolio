@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './Navbarstyle.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { FaTimes } from 'react-icons/fa';
+import ThemeButton from './ThemeButton';
 
 const Navbar = () => {
   // Using useState setting the `clicked` constant to false, remember that from right to left : useState will set the default value/instant/boolean then pass it to `setClick` variable and `setClick` variable will pass the value to the `clicked` variable  
@@ -40,7 +41,6 @@ const Navbar = () => {
           <li className={activeItem === 0 ? 'active' : ''} onClick={() => handleItemClick(0)}>
             <a href="#contact-me">Contact</a>
           </li>
-
         </ul>
       </div>
       {/* 1. The div with className of `nav-icon when clicked will trigger the handleClick Function */}

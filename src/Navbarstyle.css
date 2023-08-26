@@ -101,37 +101,42 @@ body{
 }
 
        /*6. On hover on the list items , it will show the following styles*/
-.nav li{
-       border: none;
-       display: inline-block;
-       position: relative;
-       cursor: pointer;
-       padding: 10px 16px;
-       color: gray;
-}
-
-.nav li:after{
-       content: '';
-       position: absolute;
-       width: 100%;
-       transform: scaleX(0);
-       height: 2px;
-       bottom: 0;
-       left: 0;
-       background-color: white;
-       transform-origin: bottom left;
-       transition: transform 0.25s ease-out;
-}
-.nav li:hover{
-       transform: translate(5%);
-       color: white;
-       cursor: pointer;
-}
-.nav li:hover:after{
-       transform: scaleX(1);
-       transform-origin: bottom left;
-}
-
+       .nav li {
+              /* ... Other styles ... */
+              position: relative;
+              cursor: pointer;
+              padding: 10px 16px;
+              color: gray;
+              transition: transform 0.25s ease-out, color 0.25s ease-out; /* Added color transition */
+          }
+          
+          .nav li::after {
+              /* ... Other styles ... */
+              content: '';
+              position: absolute;
+              width: 100%;
+              transform: scaleX(0);
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              background-color: white;
+              transform-origin: bottom left;
+              transition: transform 0.25s ease-out, transform-origin 0.25s ease-out; /* Added transform-origin transition */
+          }
+          
+          .nav li:hover {
+              /* ... Other styles ... */
+              transform: translate(5%);
+              color: white; /* Change color on hover */
+              cursor: pointer;
+          }
+          
+          .nav li:hover::after {
+              /* ... Other styles ... */
+              transform: scaleX(1);
+              transform-origin: bottom left;
+          }
+          
 
 .nav-icon{
        display: none;

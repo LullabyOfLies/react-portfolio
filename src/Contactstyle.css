@@ -4,60 +4,66 @@
        align-items: center;
        background-color: #2a2c2d;
        height: 50vh;
-       width: 100vw;
+       width: auto;
        flex-direction: column;
-      overflow: hidden;
+       overflow: hidden;
        /* border: 1px solid red; */
 } 
 .contact-me .contact-title{
-    
        color: skyblue;
        display: flex;
-       height: 100%;
+       /* height: 100%; */
        width: 100%;
        font-weight:bolder;
        justify-content: center;
        align-items: center;
        overflow: hidden;
-       padding: 25px;
+       /* padding: 2px; */
        font-size: 30px;
-       
+       font-family: 'Oswald', sans-serif;
+       letter-spacing: 5px;
 }
 
 .contact-container{
        padding: 10px;
        display: flex;
        height: 100%;
-       width: 100%;
+       /* width: 100%; */
        align-items: center;
        justify-content: center;
        flex-direction: column;
-       overflow: hidden;
+       overflow: auto;
        
 }
-
+.contact-title-desc{
+       font-family: 'Oswald', sans-serif;
+       padding: 10px 10px;
+       font-size: 30px;
+       letter-spacing: 2px;
+}
 .contact-header{
        padding: 30px;
        display: flex;
        align-items: center;
        justify-content: center;
-       height: auto;
+       height: 100%;
       flex-direction: column;
        width: 100%;
        color: white;
-       overflow-x: hidden;
-       
+       overflow: hidden;
+       z-index: 1;
+       font-size: 15px;
 }
 
 .home-icons {
        display: flex;
-       gap: 1rem;
+       gap: 3rem;
        color: default;
        justify-content: center;
        align-items: center;
        text-decoration: none;
-       font-size: 20px;
-       /* overflow-x: hidden; */
+       font-size: 25px;
+      
 }
 
 .home-icons > a:hover {
@@ -65,6 +71,35 @@
        color: white;
        transform: translateY(10%);
 }
+
+.home-icons button {
+       border: 1px solid black;
+       border-radius: 10px;
+       font-family: 'Lato';
+       font-size: inherit;
+       color: inherit;
+       background: none;
+       cursor: pointer;
+       padding: 25px 20px;
+       display: inline-block;
+       text-transform: uppercase;
+       letter-spacing: 1px;
+       font-weight: 700;
+       outline: none;
+       position: relative;
+       -webkit-transition: all 0.3s;
+       -moz-transition: all 0.3s;
+       transition: all 0.3s;
+       
+}
+
+.home-icons button:hover {
+       color: #2a2c2d;
+       background-color: white;
+       /* border: 1px solid white; */
+       /* transition: all 1s ease; */
+}
+
 
 footer, footer >  p{
        display: flex;
@@ -89,11 +124,28 @@ footer, footer >  p{
               flex-direction: column;
               align-items: center;
               justify-content: center;
+              font-size: 15px;
+              gap: 1rem;
        }
 
        .contact-header{
               overflow: hidden;
        }
+       .contact-me .contact-title{
+              font-size: 15px;
+       }
+       .contact-title-desc{
+              font-size: 10px;
+              
+       }
+       .home-icons button{
+              padding: 0;
+              font-size: 8px;
+              margin: 0;
+              display: flex;
+              
+       }
+       
 }
 @media screen and (max-width: 786px) {
        .contact-me{
@@ -110,13 +162,24 @@ footer, footer >  p{
               align-items: center;
               justify-content: center;
               flex-direction: column;
-
-              
+              font-size: 15px;
+              gap: 1rem;
        }
        .contact-me .contact-title{
-              font-size: 25px;
+              font-size: 15px;
        }
-       
+       .contact-title-desc{
+              font-size: 10px;
+              
+       }
+       .home-icons button{
+              border: none;
+              font-size: 8px;
+             
+              display: flex;
+              
+       }
+   
 }
 
 @media screen and (max-width: 600px) {
@@ -134,8 +197,24 @@ footer, footer >  p{
               align-items: center;
               justify-content: center;
               flex-direction: column;
+              font-size: 10px;
+              gap: 1rem;
+              overflow: hidden;
+       }
+       .contact-container{
+              width: 500px;
+              height: 500px;
+            
        }
        .contact-header{
               overflow: hidden;
        }
+       .contact-me .contact-title{
+              font-size: 15px;
+       }
+       .contact-title-desc{
+              font-size: 10px;
+              
+       }
+   
 }
