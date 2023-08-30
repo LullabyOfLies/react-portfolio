@@ -16,6 +16,7 @@ const Navbar = () => {
   }
   const handleItemClick = (itemIndex) => {
     setActiveItem(itemIndex);
+    handleClick();
   };
 
   
@@ -30,16 +31,16 @@ const Navbar = () => {
       <div className={`nav-menu ${clicked ? 'show-menu': 'donotshow-menu'}`}>
         <ul className="font-link-oswald">
           <li className={activeItem === 0 ? 'active' : ''} onClick={() => handleItemClick(0)}>
-            <a href="#home-container">Home</a>
+            <a href="#home-container" onClick={() => handleItemClick(0)}>Home</a>
           </li>
           <li className={activeItem === 0 ? 'active' : ''} onClick={() => handleItemClick(0)}>
-            <a href="#aboutContainer">About</a>
+            <a href="#aboutContainer" onClick={() => handleItemClick(0)}>About</a>
           </li>
           <li className={activeItem === 0 ? 'active' : ''} onClick={() => handleItemClick(0)}>
-            <a href="#project-container">Projects</a>
+            <a href="#project-container" onClick={() => handleItemClick(0)}>Projects</a>
           </li>
           <li className={activeItem === 0 ? 'active' : ''} onClick={() => handleItemClick(0)}>
-            <a href="#contact-me">Contact</a>
+            <a href="#contact-me" onClick={() => handleItemClick(0)}>Contact</a>
           </li>
         </ul>
       </div>
