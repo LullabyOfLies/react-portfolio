@@ -151,7 +151,7 @@ body{
        flex-direction: row;
        justify-content: space-between;
        align-items: stretch;
-       background: #161616;
+       background: inherit;
        color: white;
        font-family: 'Noto Sans'. sans-serif;
        gap: 2rem;

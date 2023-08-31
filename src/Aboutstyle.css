@@ -159,8 +159,10 @@ img{
        }
        .imageContainer{
               display: flex;
-              height: 50%;
-              width: 350px;
+              /* height: 50%;
+              width: 350px; */
+              height: 100%;
+              width: 100%;
               margin-bottom: 25px;
               justify-content: center;
               border-radius: 10%;
@@ -181,11 +183,11 @@ img{
               justify-content: center;
               align-items: center;
               flex-direction: column;
-              height: 50%;
-              width: 300px;
+              height: 100%;
+              width: 100%;
               gap: 0.25rem;
               text-align: center;
-              padding: 0 20px;
+              padding: 20px;
               margin: 50px;
               font-size: 15px;
               
@@ -203,6 +205,77 @@ img{
               text-align: left;
               color: white;
               font-size: 15px;
+              font-style: bold;
+       }
+       
+       .aboutTxtContainer > p{
+              
+              text-align: justify;
+              text-justify: inter-word;
+              color: white;
+              font-size: 13px;
+              font-style: bold;
+              
+       }
+}
+
+@media screen and (max-width: 500px){
+       .aboutContainer{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              gap: 0.25rem;
+              height: 100vh;
+              width: 100vw;
+              padding: 25px;
+              overflow-x: hidden;
+       }
+       .imageContainer{
+              display: flex;
+              height: 100%;
+              width: 100%;
+              justify-content: center;
+              border-radius: 10%;
+              margin: 0;
+       }
+       
+       img{
+              max-width: 100%;
+              max-height: 100%;
+              object-fit: cover;
+              /* border:  1px solid gray; */
+              border-radius: 10%;
+              
+       }
+       
+       .aboutTxtContainer{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+              height: 100%;
+              width: 100%;
+              gap: 0.5rem;
+              text-align: center;
+              padding: 30px;
+              /* margin: 50px; */
+              font-size: 15px;
+              
+       }
+       .aboutTxtContainer > h2{
+              display: flex;
+              text-align: center;
+              color: skyblue;
+              /* font-size: 10px; */
+              font-style: bold;
+       }
+       
+       .aboutTxtContainer > h3{
+              display: flex;
+              text-align: left;
+              color: white;
+              /* font-size: 10px; */
               font-style: bold;
        }
        

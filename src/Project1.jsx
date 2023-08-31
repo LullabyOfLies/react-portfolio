@@ -29,7 +29,7 @@ const Projects1 = () => {
 
   return (
     <section className="project-container">
-      <div className="wrapper">
+      <div className="wrapper project1-wrapper">
 
         <div className="project-desc" data-aos="fade-up-right">
           <h3 className="project-title font-link-montserrat" >Pomodoro App</h3>
@@ -60,7 +60,7 @@ const Projects1 = () => {
         </div>
 
         <div className="project-header" data-aos="fade-down-left">
-        <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}><div className="imageholder">
+        <Tilt options={defaultOptions}><div className="imageholder1">
             <img src={Project2} alt="Project2" />
         </div>
         </Tilt>

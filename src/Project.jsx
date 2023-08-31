@@ -37,7 +37,7 @@ const Projects = () => {
         <div className="project-header" data-aos="fade-up" >
           <h4 className="header-portfolio">PORTFOLIO</h4>
           <h3>A compilation of projects I've developed</h3>
-          <Tilt options={defaultOptions} style={{ height: 150, width: 250 }}><div className="imageholder">
+          <Tilt options={defaultOptions}><div className="imageholder">
             <img src={Nassi} alt="Project1" />
           </div>
           </Tilt>

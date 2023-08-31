@@ -10,7 +10,7 @@ const Contact = () => {
     <section id="contact-me" className="contact-me">
       <div className="contact-header">
       <h4 className="contact-title">CONTACT</h4>
-          <h4 className="contact-title-desc">Reach out 🤝 to me on: </h4>
+      <h3 className="contact-title-desc">Reach out 🤝 to me on: </h3>
       </div>
       <div className="contact-container">
         <div className="home-icons">
