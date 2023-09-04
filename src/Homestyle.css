@@ -5,11 +5,8 @@
        align-items: center;
        flex-direction: column;
        height: 100vh;
-       /* margin-left: 25px;
-       margin-: 25px; */
        width: 100%;
        overflow-x: hidden;
-       /* padding: 0px; */
 
 }
 
@@ -87,11 +84,6 @@ p{
        color: #cccccc;
        text-align: center;
 }
-
-/* .inactiveLink {
-       pointer-events: none;
-       cursor: default;
-    } */
 
 .icon-link{
        color: white;
@@ -233,8 +225,7 @@ button{
               align-items: center;
               flex-direction: column;
               height: 100vh;
-              /* margin-left: 25px;
-              margin-: 25px; */
+           
               width: 100%;
               overflow-x: hidden;
               padding: 20px;

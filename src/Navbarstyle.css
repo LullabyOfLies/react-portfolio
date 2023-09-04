@@ -24,7 +24,7 @@ body{
        gap: 2rem;
        z-index: 5;
        overflow-x: hidden;
-       /* padding: 0 1rem;  */
+    
        
       
 }
@@ -141,10 +141,6 @@ body{
        display: none;
 }
 
-/* .donotshow-menu {
-       display: block;
- 
-} */
 
 .show-menu {
        display: flex;
@@ -164,7 +160,6 @@ body{
        .nav{ 
                      /* 1. Setting the default main navbar container that will contain the `site-title` and the `nav-menu` */
                      display: flex;
-                     /* justify-content: center; */
                      background: #161616;
                      position: fixed;
                      width: 100vw;
@@ -212,27 +207,12 @@ body{
               background-color: inherit;
               transform: translateX(0%);
               animation: slide-in 0.3s ease-in;
-              /* transition: transform 0.3s ease-in; */
               color: white;
               flex-direction: column;
                overflow-x: hidden;
              
               
               }
-       
-       /* .show-menu {
-            
-              display: fixed;
-              top: 0;
-              left: 0;
-              background-color: inherit;
-              transform: translateX(100%);
-              transition: transform 0.3s ease-in;
-              color: white;
-              flex-direction: column;
-              } */
-              
-       
        
        .donotshow-menu{
               display: fixed;
@@ -328,7 +308,6 @@ body{
        background-color: inherit;
        transform: translateX(0%);
        animation: slide-in 0.3s ease-in;
-       /* transition: transform 0.3s ease-in; */
        color: white;
        flex-direction: column;
        overflow-x: hidden;
@@ -336,28 +315,14 @@ body{
        
        }
 
-/* .show-menu {
-     
-       display: fixed;
-       top: 0;
-       left: 0;
-       background-color: inherit;
-       transform: translateX(100%);
-       transition: transform 0.3s ease-in;
-       color: white;
-       flex-direction: column;
-       } */
-       
-
 
 .donotshow-menu{
        display: fixed;
        top: 0;
        left: 0;
-       /* background-color: #f2f2f2; */
        transform: translateX(100%);
        transition: transform 0.2s ease-out;
-       /* transition: transform 0.3s ease; */
+      
 }
 
 
